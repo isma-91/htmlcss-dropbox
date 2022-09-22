@@ -4,21 +4,14 @@
   box-sizing: border-box;
 }
 
+/* Header and nav styles */
 header {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
-}
-
-.btn {
-  padding: 5px 10px;
-  text-decoration: none;
-}
-
-.btn-blue {
-  background-color: #0061ff;
-  color: white;
+  background-color: white;
 }
 
 nav {
@@ -56,4 +49,62 @@ nav li {
 
 .nav-a {
   height: 100%;
+}
+
+/* Buttons styles */
+.btn {
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.btn-blue {
+  background-color: #0061ff;
+  color: white;
+}
+
+/* General Styles */
+.container {
+  max-width: 1100px;
+  border: 1px solid black;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 30px 30px;
+  position: relative;
+}
+
+/* Main Styles */
+.first-section {
+  padding-top: 100px;
+  background-color: #b4d0e7;
+}
+
+.first-section h1 {
+  font-size: 80px;
+  padding-bottom: 20px;
+}
+
+.small-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.right-small-container img {
+  width: 100%;
+}
+
+.left-small-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 33%;
+}
+
+.button {
+  margin: 40px 0;
+}
+
+.fa-arrow-down {
+  font-size: 50px;
+  position: relative;
+  top: 300px;
 }
