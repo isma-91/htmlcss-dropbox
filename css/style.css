@@ -59,15 +59,24 @@ nav li {
 }
 
 /* Buttons styles */
+.button {
+  margin: 40px 0;
+}
+
 .btn {
   padding: 5px 10px;
   text-decoration: none;
   white-space: nowrap;
+  display: inline-block;
 }
 
 .btn-blue {
   background-color: #0061ff;
   color: white;
+}
+
+.contact {
+  width: 100%;
 }
 
 .btn-white {
@@ -127,11 +136,8 @@ form {
   max-width: 33%;
 }
 
-.button {
-  margin: 40px 0;
-}
-
 .fa-arrow-down {
+  color: black;
   font-size: 50px;
   position: absolute;
   bottom: 10px;
@@ -166,9 +172,18 @@ form {
   padding-bottom: 50px;
 }
 
+.buy-now::after {
+  display: block;
+  content: "";
+  width: 100px;
+  border-bottom: 2px solid #e1e1e3;
+  margin-top: 30px;
+}
+
 .table-button {
   max-width: 220px;
   margin: 40px auto;
+  text-align: center;
 }
 
 .table h3,
@@ -265,11 +280,12 @@ h4 {
 }
 
 .column {
-  flex-direction: column;
+  width: 30%;
   align-items: flex-start;
   padding: 40px;
   background-color: #f5f5f5;
-  overflow: scroll;
+  overflow-x: auto;
+  max-height: 520px;
 }
 
 .column img {
@@ -356,7 +372,6 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 60px 0;
-  border-bottom: 1px solid white;
 }
 
 .footer-container a {
@@ -382,6 +397,24 @@ footer {
 .language {
   max-width: 1100px;
   margin: auto;
-  color: white;
-  padding: 30px 0;
+  color: #999891;
+  padding: 40px 0;
+}
+
+.language::before {
+  display: block;
+  content: "";
+  width: 150px;
+  border-bottom: 2px solid #e1e1e3;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.triangle {
+  vertical-align: middle;
+  padding: 0;
+}
+
+.ita {
+  padding: 0 5px;
 }
