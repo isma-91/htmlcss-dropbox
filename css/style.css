@@ -62,6 +62,7 @@ nav li {
 .btn {
   padding: 5px 10px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .btn-blue {
@@ -268,6 +269,7 @@ h4 {
   align-items: flex-start;
   padding: 40px;
   background-color: #f5f5f5;
+  overflow: scroll;
 }
 
 .column img {
@@ -342,4 +344,44 @@ h4 {
 .arrow {
   margin-left: auto;
   margin-right: 40px;
+}
+
+footer {
+  background-color: black;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  border-bottom: 1px solid white;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-container li {
+  padding: 10px 0;
+  color: white;
+}
+
+.footer-container li:first-child {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-bottom: 30px;
+}
+
+.language {
+  max-width: 1100px;
+  margin: auto;
+  color: white;
+  padding: 30px 0;
 }
