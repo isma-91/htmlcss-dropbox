@@ -100,7 +100,7 @@ nav li {
   padding: 30px 30px;
   position: relative;
 }
-
+/* immagine non sborda, non so come fare */
 h2 {
   font-size: 35px;
   padding-bottom: 50px;
@@ -211,7 +211,7 @@ h4 {
 .flex-table-container {
   display: flex;
 }
-
+/* Bottone non perfettamente allineato */
 .table-button-flex {
   margin-left: auto;
 }
@@ -335,7 +335,7 @@ h4 {
 .bkg {
   background-color: #b4d0e7;
 }
-
+/* Bottone non perfettamente allineato con la scritta */
 .flex-business {
   display: flex;
   justify-content: space-between;
