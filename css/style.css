@@ -93,20 +93,21 @@ nav li {
 }
 
 /* General Styles */
+.container.first-big {
+  max-width: 1400px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto 100px;
   justify-content: center;
   padding: 30px 30px;
-  position: relative;
-}
-/* immagine non sborda, non so come fare */
-h2 {
-  font-size: 35px;
-  padding-bottom: 50px;
 }
 
-form {
+h2 {
+  font-size: 35px;
   padding-bottom: 50px;
 }
 
@@ -119,6 +120,7 @@ form {
 .first-section h1 {
   font-size: 70px;
   padding-bottom: 20px;
+  max-width: 80%;
 }
 
 .small-container {
@@ -130,10 +132,14 @@ form {
   width: 100%;
 }
 
+.offset {
+  margin-bottom: -120px;
+}
+
 .left-small-container {
   display: flex;
   flex-direction: column;
-  max-width: 33%;
+  max-width: 25%;
 }
 
 .fa-arrow-down {
@@ -141,6 +147,14 @@ form {
   font-size: 50px;
   position: absolute;
   bottom: 10px;
+}
+
+form {
+  padding-bottom: 50px;
+}
+
+label {
+  margin-right: 20px;
 }
 
 .table {
