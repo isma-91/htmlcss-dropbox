@@ -20,6 +20,7 @@ header {
   left: 0;
   width: 100%;
   background-color: white;
+  border-bottom: 1px solid black;
 }
 
 nav {
@@ -182,6 +183,10 @@ label {
   padding: 15px 0;
 }
 
+.fa-user {
+  vertical-align: text-bottom;
+}
+
 .buy-now {
   padding-bottom: 50px;
 }
@@ -244,11 +249,12 @@ h4 {
 
 .small-container.reverse {
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
 }
 
 .small-container.reverse h3 {
+  padding-top: 80px;
   margin-bottom: 10px;
 }
 
