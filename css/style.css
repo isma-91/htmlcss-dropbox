@@ -322,6 +322,17 @@ h4 {
 
 .design {
   background-color: #a2d39b;
+  position: relative;
+}
+
+.design::before {
+  content: "";
+  position: absolute;
+  border: 10px solid #d1e9cd;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .arizona {
