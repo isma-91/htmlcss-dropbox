@@ -159,7 +159,8 @@ label {
 }
 
 .table {
-  border: 1px solid #e6e6e8;
+  --table-border-style: 1px solid #e6e6e8;
+  border: var(--table-border-style);
   width: 30%;
   flex: 1 1 auto;
   margin-bottom: 40px;
@@ -170,7 +171,7 @@ label {
 }
 
 .target {
-  border-bottom: 1px solid #e6e6e8;
+  border-bottom: var(--table-border-style);
   text-align: center;
   padding: 5px;
 }
@@ -372,21 +373,42 @@ h4 {
 .flex-business h2 {
   color: #61082b;
 }
-
+/* Ricordarsi che le variabili si mettono al genitore degli elementi a cui vogliamo vengano applicate*/
 .faq {
-  border-bottom: 1px solid black;
-  display: flex;
-  align-items: center;
+  --faq-border-style: 1px solid black;
 }
 
-.question {
+.faq h2 {
+  border-bottom: var(--faq-border-style);
+}
+
+.faq ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq .question {
+  display: flex;
   font-weight: bold;
+  flex-wrap: wrap;
+  border-bottom: var(--faq-border-style);
   padding: 40px 0;
+  width: 100%;
 }
 
 .arrow {
   margin-left: auto;
   margin-right: 40px;
+}
+
+.hide {
+  display: none;
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+.question:hover .hide {
+  display: block;
 }
 
 footer {
